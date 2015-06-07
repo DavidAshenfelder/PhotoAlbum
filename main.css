@@ -1,0 +1,170 @@
+body {
+  background-color: black;
+
+}
+
+.container {
+  display: inline-block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+
+}
+
+.row {
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  background-color: grey;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.buttons {
+  width: 19%;
+  position: fixed;
+  overflow: scroll;
+  height: 100%;
+  background-color: silver;
+  text-align: center;
+}
+
+.buttons-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  width: 90%;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button input {
+  height: 5vmax;
+  border-radius: 7px;
+  border-color: silver;
+  background-color: teal;
+  width: 90%;
+}
+
+.button-wrapper {
+
+  text-align: center;
+}
+
+.album-page {
+  margin: 4%;
+  width: 100%
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.albums {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4%;
+  flex-wrap: wrap;
+
+}
+
+.album-wrapper {
+  margin: 4%;
+  width: 100%
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.album-title-wrapper {
+  width: 100%;
+  height: 6vmax;
+  text-align: center;
+  background-color: silver;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+
+
+}
+
+.album-title {
+  display: inline-block;
+  text-align: center;
+  font-size: 4vmax;
+  height: 6vmax;
+  width: 95%;
+}
+
+.album {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4%;
+  flex-wrap: wrap;
+
+}
+
+.picture {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width:30%;
+  background-color: white;
+  margin: 1%;
+  border-radius: 2px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.picture img {
+  width: 13vmax;
+  height: 13vmax;
+  border-radius: 4px;
+  margin-top: 1vmax;
+  object-fit: contain;
+
+}
+
+.picture h5 {
+  text-align: center;
+  font-size: 2.5vmax;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.displayNone {
+
+  display: none;
+}
+
+#front-page {
+  float: none;
+  display: block;
+  height: 100%;
+}
