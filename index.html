@@ -12,32 +12,32 @@
 <aside class="buttons" >
 <div class="buttons-wrapper">
   <div class="button-wrapper">
-    <div id="button1" class="button">
-      <input type="button" name="1" value= "Album 1" data-value="1">
+    <div id="button1" class="button" data-value="1">
+      <input type="button" name="1" value= "Album 1">
     </div>
   </div>
   <div class="button-wrapper">
-    <div id="button2" class="button">
+    <div id="button2" class="button" data-value="2">
       <input type="button" name="Album 2" value="Album 2" data-value="2">
     </div>
   </div>
   <div class="button-wrapper">
-    <div id="button3" class="button">
+    <div id="button3" class="button" data-value="3">
       <input type="button" name="Album 3" value="Album 3" data-value="3">
     </div>
   </div>
   <div class="button-wrapper">
-    <div id="button4" class="button">
+    <div id="button4" class="button" data-value="4">
       <input type="button" name="Album 4" value="Album 4" data-value="4">
     </div>
   </div>
   <div class="button-wrapper">
-    <div id="button5" class="button">
+    <div id="button5" class="button" data-value="5">
       <input type="button" name="Album 5" value="Album 5" data-value="5">
     </div>
   </div>
   <div class="button-wrapper">
-    <div id="button6" class="button">
+    <div id="button6" class="button" data-value="6">
       <input type="button" name="Album 6" value="Album 6" data-value="6">
     </div>
   </div>
@@ -53,27 +53,27 @@
         </div>
       </header>
       <div id="albums-main" class="albums">
-        <div class="picture" data-value="1">
-          <img src="photos/IMG_2709.jpg" alt="" />
+        <div class="album-cover" data-value="1">
+
           <h5 class="image-title">Album 1</h5>
         </div>
-        <div class="picture" data-value="2">
-          <img src="photos/IMG_2659.jpg" alt="" />
+        <div class="album-cover" data-value="2">
+
           <h5 class="image-title">Album 2</h5>
         </div>
-        <div class="picture" data-value="3">
+        <div class="album-cover" data-value="3">
           <img src="photos/IMG_2647.jpg" alt="" />
           <h5 class="image-title">Album 3</h5>
         </div>
-        <div class="picture" data-value="4">
+        <div class="album-cover" data-value="4">
           <img src="photos/IMG_2659.jpg" alt="" />
           <h5 class="image-title">Album 4</h5>
         </div>
-        <div class="picture" data-value="5">
+        <div class="album-cover" data-value="5">
           <img src="photos/IMG_2659.jpg" alt="" />
           <h5 class="image-title">Album 5</h5>
         </div>
-        <div class="picture" data-value="6">
+        <div class="album-cover" data-value="6">
           <img src="photos/IMG_2659.jpg" alt="" />
           <h5 class="image-title">Album 6</h5>
         </div>
@@ -82,13 +82,54 @@
 </section>
 <section id="album-container" class="container">
   <div  class="row">
-    <div class="album-wrapper" data-value="1">
+    <div id="button1" class="album-wrapper" data-value="1">
       <header>
         <div class="album-title-wrapper">
           <h2 class="album-title">Album Title</h2>
         </div>
       </header>
       <div id="a1" class="album">
+        <div class="picture">
+          <img src="photos/IMG_2709.jpg" alt="" />
+          <h5 class="image-title">image</h5>
+          <input type="button" name="Back" value="Back">
+        </div>
+        <div class="picture">
+          <img src="photos/IMG_2659.jpg" alt="" />
+          <h5 class="image-title">image</h5>
+          <input type="button" name="name" value="Back">
+        </div>
+        <div class="picture">
+          <img src="photos/IMG_2659.jpg" alt="" />
+          <h5 class="image-title">image</h5>
+          <input type="button" name="name" value="Back">
+        </div>
+        <div class="picture">
+          <img src="photos/IMG_2659.jpg" alt="" />
+          <h5 class="image-title">image</h5>
+          <input type="button" name="name" value="Back">
+        </div>
+        <div class="picture">
+          <img src="photos/IMG_2659.jpg" alt="" />
+          <h5 class="image-title">image</h5>
+          <input type="button" name="name" value="Back">
+        </div>
+        <div class="picture">
+          <img src="photos/IMG_2659.jpg" alt="" />
+          <h5 class="image-title">image</h5>
+          <input type="button" name="name" value="Back">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div id="button2" class="album-wrapper" data-value="2">
+      <header>
+        <div class="album-title-wrapper">
+          <h2 class="album-title">Album Title</h2>
+        </div>
+      </header>
+      <div id="a2" class="album">
         <div class="picture">
           <img src="photos/IMG_2659.jpg" alt="" />
           <h5 class="image-title">image</h5>
@@ -117,13 +158,13 @@
     </div>
   </div>
   <div class="row">
-    <div class="album-wrapper">
+    <div class="album-wrapper" data-value="3">
       <header>
         <div class="album-title-wrapper">
           <h2 class="album-title">Album Title</h2>
         </div>
       </header>
-      <div id="a1" class="album">
+      <div id="a3" class="album">
         <div class="picture">
           <img src="photos/IMG_2659.jpg" alt="" />
           <h5 class="image-title">image</h5>
@@ -152,48 +193,13 @@
     </div>
   </div>
   <div class="row">
-    <div class="album-wrapper">
+    <div class="album-wrapper" data-value="4">
       <header>
         <div class="album-title-wrapper">
           <h2 class="album-title">Album Title</h2>
         </div>
       </header>
-      <div id="a1" class="album">
-        <div class="picture">
-          <img src="photos/IMG_2659.jpg" alt="" />
-          <h5 class="image-title">image</h5>
-        </div>
-        <div class="picture">
-          <img src="photos/IMG_2659.jpg" alt="" />
-          <h5 class="image-title">image</h5>
-        </div>
-        <div class="picture">
-          <img src="photos/IMG_2659.jpg" alt="" />
-          <h5 class="image-title">image</h5>
-        </div>
-        <div class="picture">
-          <img src="photos/IMG_2659.jpg" alt="" />
-          <h5 class="image-title">image</h5>
-        </div>
-        <div class="picture">
-          <img src="photos/IMG_2659.jpg" alt="" />
-          <h5 class="image-title">image</h5>
-        </div>
-        <div class="picture">
-          <img src="photos/IMG_2659.jpg" alt="" />
-          <h5 class="image-title">image</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="album-wrapper">
-      <header>
-        <div class="album-title-wrapper">
-          <h2 class="album-title">Album Title</h2>
-        </div>
-      </header>
-      <div id="a1" class="album">
+      <div id="a4" class="album">
         <div class="picture">
           <img src="photos/IMG_2659.jpg" alt="" />
           <h5 class="image-title">image</h5>
@@ -222,13 +228,13 @@
     </div>
   </div>
   <div  class="row">
-    <div class="album-wrapper">
+    <div class="album-wrapper" data-value="5">
       <header>
         <div class="album-title-wrapper">
           <h2 class="album-title">Album Title</h2>
         </div>
       </header>
-      <div id="a1" class="album">
+      <div id="a5" class="album">
         <div class="picture">
           <img src="photos/IMG_2659.jpg" alt="" />
           <h5 class="image-title">image</h5>
@@ -257,13 +263,13 @@
     </div>
   </div>
   <div  class="row">
-    <div class="album-wrapper">
+    <div class="album-wrapper" data-value="6">
       <header>
         <div class="album-title-wrapper">
           <h2 class="album-title">Album Title</h2>
         </div>
       </header>
-      <div id="a1" class="album">
+      <div id="a6" class="album">
         <div class="picture">
           <img src="photos/IMG_2659.jpg" alt="" />
           <h5 class="image-title">image</h5>
@@ -309,8 +315,9 @@
 
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="photo-album.js"></script>
   <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+  <script type="text/javascript" src="photo-album.js"></script>
+
 
 </body>
 </html>

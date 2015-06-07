@@ -1,40 +1,74 @@
 $(".buttons").hide();
 $("#album-container").hide();
+$(".album-wrapper").hide();
+$('input[value="Back"]').hide()
 
-// $(".container").addClass($("#front-page"));
+///////////////////////////////////////////////
+// Need to make clicking on individual albums
+// display coordinating album
 
 $("#albums-main").children().click(function(){
   event.preventDefault();
   $(".buttons").fadeIn("medium");
-  $("#front-page").hide();
+  $("#front-page").hide()
   $("#album-container").show();
 });
 
-$("button, input[type='button']").click(function(event){
-  event.preventDefault();
+///////////////////////////////////////////////
 
-  var butVal = $(this).data('value');
-  var albVal = $(".album-wrapper").data('value');
 
-  $(".album-wrapper").each(function(){
+///////////////////////////////////////////////
+///here I need to input the 1st image of the album into the
+/// album cover page
 
-  if ( butVal = albVal) {
 
-  $(".album-wrapper").show();
-  }
-  else {
-    $(".album-wrapper").hide();
-  }
+var i = $(".album").attr('id')
+
+$('.album-cover:nth-child(2)').prepend($("#a1:nth-child(2)").children().children().eq(0));
+
+
+
+///////////////////////////////////////////////
+
+
+///////////////////////////////////////////////
+//here I need to make buttons display
+//coordinating album
+
+$(".button").click(function(event){
+ event.preventDefault();
+
+ $(".album-wrapper").filter(function(){
+
+ var butVal = $(this).data('value');
+
+ var albVal = $(".album-wrapper").data('value')
+
+
 });
+  console.log($(this).data('value'));
+  console.log( $('.album-wrapper[data-value= "butVal"]'));
 });
+///////////////////////////////////////////////
+
+
+//////////////////////////////////////////////
+
+// When click on image in album make image
+// go full screen and fade out background
 
 
 
-//need to get album-page to:
-// float:none display: block
+//////////////////////////////////////////////
 
-////Code to use in future//////
-// $('.gallery img').each(function(i) {
-//     $(this).attr('id', 'img' + i);
-//     // You can also add more code here if you wish to manipulate each IMG element further
-// });
+
+///////////////////////////////////////////////
+// need to add button to go back to
+// main albums page
+
+///////////////////////////////////////////////
+
+
+///////////////////////////////////////////////
+// need to make button go back to
+// album page
