@@ -1,6 +1,13 @@
 body {
   background-color: black;
+}
 
+.active {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
 
 .container {
@@ -199,9 +206,35 @@ body {
   margin-right: auto;
 }
 
-.displayNone {
+.pictureFull {
+  width: 80%;
 
+}
+
+.overLay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overLay img {
+  margin-top: 5%;
+  width: 80%;
+  height:80%;
+  object-fit: contain;
+}
+
+.overLay input {
+  position: absolute;
+  top: 2%;
+  left: 2%;
 }
 
 #front-page {
