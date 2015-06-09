@@ -19,24 +19,10 @@ $(document).ready(function(){
 
 
 $(".buttons").hide();
-// $(".album-wrapper").hide();
-$('input[value="go back"]').hide()
-
-
-// var album1 = $('photos').filter(function(obj){
-//   return
-//
-// });
+$(".album-wrapper").hide();
 
 
 ///////////////////////////////////////////////
-// Need to make clicking on individual albums
-// display coordinating album
-// 2) match that with the value of the album
-//    you want to display
-// 3) display the album with the value equal
-//    to album value that you clicked
-// 4) hide "go back" button on picture div
 
 $("#albums-main").children().click(function(event){
   event.preventDefault();
@@ -44,12 +30,13 @@ $("#albums-main").children().click(function(event){
   $("#front-page").hide();
   var albClick = $(this).attr('rel')
   console.log(albClick);
-  var showArr =  $('.album').filter(function(obj) {
-    return $(obj).attr('rel') === albClick;
+  var showArr =  $('.album-wrapper').filter(function(idx, obj) {
 
-    console.log(showArr);
-  })
+    return $(obj).children('.album').attr('id') === albClick;
 
+  });
+
+  $(showArr).show()
 
 });
 
@@ -81,17 +68,13 @@ $(".button").click(function(event){
  var $albWraps = $('.album-wrapper');
 
  butVal = $(this).attr('rel');
-  var albVal = $('.album-wrapper').filter(function(obj) {
-     return $(obj).attr('rel') === butVal
-
-
+  var albVal = $('.album-wrapper').filter(function(idx,elm) {
+     return $(elm).children('.album').attr('id') === butVal
  });
- console.log($albWraps);
- console.log(butVal);
- console.log(albVal);
 
-
+  $('.album-wrapper').hide()
   $(albVal).show();
+
 });
 
 ///////////////////////////////////////////////
@@ -103,9 +86,9 @@ $(".button").click(function(event){
 $('.album img').click(function(event){
   event.preventDefault();
   var imgClone = $(this).clone();
-  $('.overLay').append(imgClone)
-  $('.overLay').show()
-  $('overLay input').show()
+  $('.overLay').prepend(imgClone);
+  $('.overLay').show();
+  $('.row input').show();
 
 
 
@@ -113,48 +96,22 @@ $('.album img').click(function(event){
 
 })
 
-$('.overLay').click(function(){
-  $(this).hide();
-  $(this).empty();
+$('#goBack').click(function(){
+  $('.overLay').hide();
+  $('.overLay img').remove();
 
 });
-
-
-
-
-// var overLay = $('<div class="overLay"></div>');
-// var img = $("<img>");
-// //
-// $("overLay").append(img);
-// //
-// $("body").append(overLay);
-//
-// $(".album img").click(function(event){
-//   event.preventDefault();
-//
-//
-//   $('overLay').show(this);
-//
-// });
-//
-// $('overLay').click(function(){
-//   $(this).hide();
-//
-// });
-
 
 //////////////////////////////////////////////
 
 
 ///////////////////////////////////////////////
-//
-// 1) make button show when click on album
-// 2) make button got back to albums page
 
-///////////////////////////////////////////////
+$('#albumGoBack').click(function(){
+  $('#front-page').show();
+  $('.buttons').hide();
+  $('.album-wrapper').hide();
 
+});
 
-///////////////////////////////////////////////
-// 1) make button show when click on picture
-// 2) make button got back to album
 });
